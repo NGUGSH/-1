@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ready-made.css" />
+		<link type="text/css" rel="stylesheet" href="css/supportive.css" />
+		<link rel="stylesheet" type="text/css" href="css/whole.css" />
+		<style type="text/css">
+			@font-face {
+				 font-family: 'icomoon';
+				  src:  url('fonts/icomoon.eot?lezf1j');
+				  src:  url('fonts/icomoon.eot?lezf1j#iefix') format('embedded-opentype'),
+				    url('fonts/icomoon.ttf?lezf1j') format('truetype'),
+				    url('fonts/icomoon.woff?lezf1j') format('woff'),
+				    url('fonts/icomoon.svg?lezf1j#icomoon') format('svg');
+				  font-weight: normal;
+				  font-style: normal;
+				  font-display: block;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			input::-moz-placeholder {
+				text-indent: 10px;
+			}
+
+			input::-ms-input-placeholder {
+				text-indent: 10px;
+			}
+
+			input:placeholder-shown {
+				text-indent: 10px;
+			}
+
+			input::placeholder {
+				color: #000000 !important;
+				/* background-color: #00FFFF; */
+				padding-bottom: 3px !important;
+				margin-left: 5px;
+				text-indent: 10px;
+			}
+
+			.try-products {
+				width: 600px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 30px;
+			}
+
+			.head-three {
+				/* background-color: #000000; */
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.head-three div[id^=content] {
+				width: 30%;
+				/* background-color: #000000; */
+				word-break: break-word;
+				color: #999999;
+			}
+
+			.head-three div[id^=content] h3 {
+				color: black;
+			}
+
+			.head-three div[id^=content] p {
+				text-align: center;
+			}
+			.try-products .line{
+				width: 800px;
+				height: 2px;
+				background-color: #AAAAAA;
+				margin-top: 40px;
+				margin-left: calc(50% - 400px);
+			}
+			.try-products .content{
+				margin: 40px 0;
+				/* background-color: #00FFFF; */
+				position: relative;
+				text-align: left;
+				/* display: block; */
+			}
+			.try-products .content>div img{
+				width: 300px;
+			}
+			.try-products .content>div>span{
+				display: inline-block;
+			}
+			.try-products .content>div:first-child>span:first-child{
+				text-align: left;
+				/* background-color: #000000; */
+			}
+			.try-products .content>div:first-child>span:last-child{
+				width: 240px;
+				position: absolute;
+				right: 0;
+				/* margin-left: 40px; */
+			}
+			.try-products .content>div:last-child{
+				margin: 40px 0;
+			}
+			.try-products .content>div:last-child>span:last-child{
+				position: absolute;
+				right: 0;
+				/* background-color: #000000; */
+			}
+			.try-products .content>div:last-child>span:first-child{
+				width: 240px;
+				position: absolute;
+				left: 0;
+				/* margin-left: 40px; */
+			}
+			 .line2{
+				width: 800px;
+				height: 2px;
+				background-color: #AAAAAA;
+				margin-top: 300px;
+				margin-bottom: 40px;
+				margin-left: calc(50% - 400px);
+			}
+			.awesome-crew{
+				width: 600px;
+				margin-left: calc(50% - 300px);
+				text-align: center;
+			}
+			.awesome-crew .description{
+				width: 500px;
+				margin: 30px 0;
+				margin-left: calc(50% - 250px);
+			}
+			.awesome-crew .crew-photo{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			
+			.awesome-crew .crew-photo div:nth-child(2n){
+				margin-left: 10px;
+			}
+			.awesome-crew .crew-photo div:nth-child(n+2){
+				margin-top: 10px;
+			}
+			.awesome-crew .crew-photo div img{
+				width: 280px;
+			}
+			.awesome-crew .crew-photo div:nth-child(2){
+				margin-top: 0px;
+			}
+			.write-contact{
+				display: flex;
+				flex-direction: row;
+				flex-basis: 0.5;
+				margin-top: 40px;
+			}
+			.write-contact .write{
+				width: 48%;
+			}
+			.write-contact .write input:first-child{
+				margin-top: 10px;
+			}
+			.write-contact .write input{
+				width: 70%;
+				height: 30px;
+				margin-bottom: 10px;
+			}
+			.write-contact .write textarea{
+				width: 70%;
+				margin-bottom: 10px;
+			}
+			.write-contact .write input:last-child{
+				width: 70%;
+				background-color: #000000;
+				color: white;
+				border: 0px solid transparent;
+			}
+			.write-contact .contacts{
+				width: 48%;
+				position: relative;
+			}
+			.write-contact .contacts p:first-child{
+				margin-top: 10px;
+				color: #787878;
+				text-align: left;
+			}
+			.write-contact .contacts p:nth-child(n+3){
+				width: 70%;
+				margin-top: 10px;
+				margin-left: 25px;
+				word-break: break-word;
+				text-align: left;
+			}
+			.write-contact .contacts p:nth-child(3)::before{
+				position: absolute;
+				content: "\e917";
+				left: 3px;
+				top: 100px;
+				font-family: icomoon;
+				color: #787878;
+				/* margin-right: 10px; */
+				/* color: #000990; */
+			}
+			.write-contact .contacts p:nth-child(4)::before{
+				position: absolute;
+				content: "\e925";
+				left: 3px;
+				top: 150px;
+				font-family: icomoon;
+				color: #787878;
+			}
+			.write-contact .contacts p:nth-child(5)::before{
+				position: absolute;
+				content: "\e924";
+				left: 3px;
+				top: 184px;
+				font-family: icomoon;
+				color: #787878;
+			}
+			.bottom {
+				width: 100%;
+				height: 300px;
+				align-items: center;
+				color: white;
+				background-color: #000000;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.bottom>div>ul>li{
+				list-style: none;
+			}
+			.bottom>div>ul{
+				height: 100%;
+				display: flex;
+				/* background-color: #000000; */
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.bottom>div{
+				width: 20%;
+				height: 60%;
+				/* background-color: #E2E2E2; */
+				
+			}
+			.bottom>div>ul>li:nth-child(n+2){
+				font-size: 13px;
+				color: #787878;
+			}
+			.bottom>div:last-child h5{
+				margin-bottom: 24px;
+				
+			}
+			.bottom>div:last-child p{
+				color: #787878;
+			}
+			.bottom>div:last-child>ul{
+				margin-top: 15px;
+				display: flex;
+				flex-direction: row;
+				/* background-color: #787878; */
+				justify-content: space-between;
+			}
+			.bottom>div:last-child>ul>li{
+				font-family: icomoon;
+				font-size: 14px;
+				/* float: left; */
+			
+				margin-left: 10px;
+			}
+			.bottom>div:last-child>ul>li:first-child{
+				margin-left: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="first-whole">
+			<div class="whole">
+				<div class="title">
+					<h2>Hello World</h2>
+					<h6>China is speeding up strategic adsandnm sadnasmdsnadjw
+						sadnasmdnsa,md sdsam,dsand sdnam,dnsad asnmdasd,sndmasndas, sdnmasdnsa,mdsa asdjdnaskdj</h6>
+				</div>
+
+
+				<div class="bottom-box">
+					<div>
+						<h4>CREATE YOUR ACCOUNT</h4>
+						<h6>sasaasf sadsads</h6>
+						<form action="#" method="post">
+							<input type="text" class="input-box" placeholder="xxxx.com" id="" value="" />
+							<input type="password" placeholder="xxxxxxxx" />
+							<!-- <button value="">SIGN UP</button> -->
+							<input type="submit" value="SIGN UP" />
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ready-made">
+			<div class="header">
+				<h5>asdadsadas</h5>
+				<h2>Ready-made.customizable,HTML landing page sections</h2>
+			</div>
+			<div class="content">
+				<div>
+					<div><img src="img/1.jpg"></div>
+					<div>
+						<p>
+							<h4>1111</h4>
+						</p>
+						<p>sadsadsadsadadsadas</p>
+					</div>
+				</div>
+				<div>
+					<div><img src="img/1.jpg"></div>
+					<div>
+						<p>
+							<h4>1111</h4>
+						</p>
+						<p>sadsadsadsadadsadas</p>
+					</div>
+				</div>
+				<div>
+					<div><img src="img/1.jpg"></div>
+					<div>
+						<p>
+							<h4>1111</h4>
+						</p>
+						<p>sadsadsadsadadsadas</p>
+					</div>
+				</div>
+				<div>
+					<div><img src="img/1.jpg"></div>
+					<div>
+						<p>
+							<h4>1111</h4>
+						</p>
+						<p>sadsadsadsadadsadas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="supportive-policies">
+			<div>
+				<div class="left-content">
+					<h2>sadsad sadsad sadsa dasda dsadas</h2>
+					<h6>ss sss sdsd kkkf fgjfjgj fgkf fgjr fgjfkj firti fgjfkj ssdss dddee
+						erree rtfgh hggytr eerwwq fgfjj fgjfj fgjfgjk fgjfjg fgjfkjgkf fwwwee</h6>
+
+					<button class="button1">kgjfkf jfkdsjk</button><button> asjk asjkas</button>
+				</div>
+				<div class="right-content">
+					<div class="inner">
+						<div class="header">
+							<h3>资料</h3>
+							<h6>萨达金刚护法的偶然 地方是块级 你可发送</h6>
+						</div>
+						<div class="card">
+							<ul>
+								<li>
+									<p><img src="img/1.jpg"></p>
+									<div>
+										<h4>这是</h4>
+										<p>sad静安寺肯德基爱神的箭奥斯卡来得及围棋人机区哦</p>
+									</div>
+								</li>
+								<li>
+									<p><img src="img/1.jpg"></p>
+									<div>
+										<h4>这是</h4>
+										<p>sad静安寺肯德基爱神的箭奥斯卡来得及围棋人机区哦</p>
+									</div>
+								</li>
+								<li>
+									<p><img src="img/1.jpg"></p>
+									<div>
+										<h4>这是</h4>
+										<p>sad静安寺肯德基爱神的箭奥斯卡来得及围棋人机区哦</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="try-products">
+			<div class="head-three">
+				<div id="content-1">
+					<h3>title</h3>
+					<p>a chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk chane
+						erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk
+						chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk</p>
+				</div>
+				<div id="content-2">
+					<h3>title</h3>
+					<p>a chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk chane
+						erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk
+						chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk</p>
+				</div>
+				<div id="content-3">
+					<h3>title</h3>
+					<p>a chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk chane
+						erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk
+						chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk</p>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="content">
+				<div>
+					<span>
+						<img src="img/1.jpg" >
+					</span>
+					<span>
+						<h4>Learn how to improves your personal Business</h4>
+						<p>asdj sadjk erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk
+						chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk</p>
+					</span>
+				</div>
+				<div>
+					<span>
+						<h4>Learn how to improves your personal Business</h4>
+						<p>asdj sadjk erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk
+						chane erke sjdajdk kdos jfdj sdak asdkdas sadjnad ajsdk</p>
+					</span>
+					<span>
+						<img src="img/1.jpg" >
+					</span>
+				</div>
+			</div>
+			
+		</div>
+		<div class="line2"></div>
+		<div class="awesome-crew">
+			<h3>Our Awesome Crew</h3>
+			<p class="description">
+				Learn how to improves your personal Business
+				asdj sadjk erke sjdajdk kdos jfdj sdak
+			</p>
+			<div class="crew-photo">
+				<div>
+					<img src="img/1.jpg" >
+				</div>
+				<div>
+					<img src="img/1.jpg" >
+				</div>
+				<div>
+					<img src="img/1.jpg" >
+				</div>
+				<div>
+					<img src="img/1.jpg" >
+				</div>
+			</div>
+			<div class="write-contact">
+				<div class="write">
+					<h4>FELL FREE TO WRITE US</h4>
+					<form action="#" method="post">
+						<input type="text" placeholder="E-mail" name="" id="" value="" />
+						<input type="text" placeholder="Subject" name="" id="" value="" />
+						<textarea placeholder="Message"></textarea>
+						<input type="submit" value="SEND"/>
+					</form>
+				</div>
+				<div class="contacts">
+					<h3>Contact</h3>
+					<p>when you first meet me , it is a nice day, please tell me your address , intance of</p>
+					<p>360 King street Feastrvale Trevose,PA 19057</p>
+					<p>(755)564-84-12</p>
+					<p>yourname@mail.com</p>
+				</div>
+			</div>
+		</div>
+	    <div class="bottom">
+			<div>
+				<ul>
+					<li>LEARN MORE</li>
+					<li>HOW IT WORKS?</li>
+					<li>Meeting tools</li>
+					<li>Live streaming</li>
+					<li>Contact method</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>ABOUT US</li>
+					<li>about us</li>
+					<li>Feature</li>
+					<li>Privacy police</li>
+					<li>Terms & Conditions</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>SUPPORT</li>
+					<li>FAQ</li>
+					<li>Contact us</li>
+					<li>Live chat</li>
+					<li>Phone call</li>
+				</ul>
+			</div>
+			<div>
+				<h5>ENJOY YOUR LIFE</h5>
+				<p>Great web UI kit for designers, freelancers or business</p>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

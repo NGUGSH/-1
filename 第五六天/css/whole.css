@@ -1,0 +1,89 @@
+.first-whole {
+				width: 100%;
+				/* height: 100%; */
+				/* background-color: #000000; */
+				background-image: url(../img/1.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.whole {
+				text-align: center;
+				position: relative;
+				left: calc(50% - 400px);
+				top: 100px;
+				display: block;
+				/* position: relative; */
+				width: 800px;
+				height: 600px;
+				/* margin: 0 auto; */
+			}
+
+			.whole .title>h2:first-child {
+				color: #ffffff;
+				font-weight: 400;
+			}
+
+			.whole .title {
+				display: inline-block;
+				width: 500px;
+				word-break: break-word;
+			}
+
+			.whole .title h6 {
+				margin-top: 18px;
+				font-size: 14px;
+				color: #FFFFFF;
+			}
+
+			.whole .bottom-box {
+				margin-top: 60px;
+				width: 500px;
+				display: inline-block;
+				position: relative;
+				border: 1px solid #FFFFFF;
+			}
+
+			.whole .bottom-box>div {
+				padding: 50px;
+			}
+
+			.whole .bottom-box>div h4 {
+				color: #FFFFFF;
+				margin-bottom: 10px;
+			}
+
+			.whole .bottom-box>div h6 {
+				font-size: 14px;
+				color: #FAEBD7;
+				margin-bottom: 16px;
+			}
+
+			.whole .bottom-box>div input {
+				height: 20px;
+				font-size: 12px;
+				/* line-height: 20px; */
+			}
+
+			.whole .bottom-box>div input::-ms-input-placeholder {
+				/* line-height: 20px; */
+				color: black;
+				text-indent: 10px;
+			}
+
+			
+
+			.whole .bottom-box>div input:last-child {
+				height: 23px;
+				width: 70px;
+				text-align: center;
+				/* font-size: 12px; */
+			}
+			.whole .bottom-box>div button {
+				width: 80px;
+				text-align: center;
+				font-size: 12px;
+				position: absolute;
+				right: 20px;
+				top: 115px;
+			}

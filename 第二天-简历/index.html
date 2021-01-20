@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>简历</title>
+		<style type="text/css">
+			@font-face {
+				 font-family: 'icomoon';
+				  src:  url('fonts/icomoon.eot?lezf1j');
+				  src:  url('fonts/icomoon.eot?lezf1j#iefix') format('embedded-opentype'),
+				    url('fonts/icomoon.ttf?lezf1j') format('truetype'),
+				    url('fonts/icomoon.woff?lezf1j') format('woff'),
+				    url('fonts/icomoon.svg?lezf1j#icomoon') format('svg');
+				  font-weight: normal;
+				  font-style: normal;
+				  font-display: block;
+			}
+			body{
+				width: 700px;
+				/* background-color: #111111; */
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				
+			}
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			header{
+				width: 100%;
+				display: block;
+				/* background-color: #333333; */
+				/* clear: both; */
+			}
+			#left-head{
+				float: left;
+				display: inline-block;
+			    /* width: -moz-calc(100% - 200px); */
+                 width: calc(100% - 200px);
+			    height: 160px;
+				/* background-color: antiquewhite; */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#left-head>ul{
+				text-align: center;
+				/* background-color: #222222; */
+			}
+			#left-head>ul>li{
+				list-style: none;
+			}
+			#left-head>ul>li:nth-child(n+2){
+				/* list-style: none; */
+				margin-top: 10px;
+			}
+			#left-head>ul>li:nth-child(1)::before{
+			content: '\e925';
+			font-family: icomoon;
+			color: #00FFFF;
+			}
+			#left-head>ul>li:nth-child(2)::before{
+				content: '\e924';
+				font-family: icomoon;
+				color: #00FFFF;
+			}
+			#left-head>ul>li:nth-child(3)::before{
+				content: '\e926';
+				font-family: icomoon;
+				color: #00FFFF;
+			}
+			#right-head{
+				display: inline-block;
+				float: right;
+				width: 200px;
+				height: 160px;
+				/* background-color: aqua; */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#right-head img{
+				width: 100px;
+				height: 140px;
+			}
+			#header-line{
+				width: 90%;
+				height: 3px;
+				background-color: #00FFFF;
+				/* text-align: center; */
+				margin-left: 2%;
+			}
+			#self-description{
+				width: 90%;
+				margin-top: 3px;
+			}
+			#self-description>ul>li{
+				font-size: 14px;
+				float: left;
+				width: 20%;
+				list-style: none;
+			}
+			#self-description>ul>li>span:last-child{
+				color: #aaaaaa;
+				margin-left: 5px;
+			}
+			#cultrural-bac{
+				margin-top: 8px;
+			}
+			#cultrural-bac div:first-child>h2{
+				float: left;
+				margin-left: 20px;
+				color: #00FFFF;
+			}
+			#cultrural-bac div:first-child>h2::after{
+				content: '\e927';
+				font-family: icomoon;
+				margin-left: 5px;
+			}
+			#cultrural-bac div:first-child>div{
+				float: right;
+				margin-right: 50px;
+				margin-top: 30px;
+				width: calc(100% - 200px);
+				height: 3px;
+				background-color: #00FFFF;
+			}
+			#cultrural-bac div:nth-child(2)>div:first-child{
+				float: left;
+				margin: 8px 0 0 20px;
+			}
+			#cultrural-bac div:nth-child(2)>div:last-child{
+				float: left;
+				padding: 7px 0 0 15px;
+			}
+			#cultrural-bac div:nth-child(2)>div:last-child>p:last-child{
+				color: #acacac;
+				margin-top: 10px;
+			}
+			#activity-experience{
+				margin-top: 8px;
+				/* background-color: antiquewhite; */
+			}
+			#activity-experience>div:first-child>h2{
+				float: left;
+				margin-left: 20px;
+				color: #00FFFF;
+			}
+			#activity-experience>div:first-child>h2::after{
+				content: '\e927';
+				font-family: icomoon;
+				margin-left: 5px;
+				
+			}
+			#activity-experience>div:first-child>div{
+				float: right;
+				margin-right: 50px;
+				margin-top: 30px;
+				width: calc(100% - 200px);
+				height: 3px;
+				background-color: #00FFFF;
+			}
+			#activity-experience >div:nth-child(2) #first>div:first-child{
+				display: inline-block;
+				/* background-color: #00FFFF; */
+				/* margin: 8px 0 0 20px; */
+				margin-top: 5px;
+			}
+			#activity-experience >div:nth-child(2) #second{
+				margin-top: 15px;
+			}
+			#activity-experience >div:nth-child(2) #second>div:first-child{
+				display: inline-block;
+				/* margin: 8px 0 0 20px; */
+				margin-top: 5px;
+			}
+			#activity-experience >div:nth-child(2) #first>div:nth-child(2){
+				width: 70%;
+				margin-left: 20%;
+				text-align: left;
+				margin-top: -15px;
+			}
+			#activity-experience >div:nth-child(2) #first>div:nth-child(2)>p:nth-child(1){
+				display: inline-block;
+				margin-top: -30px;
+			}
+			#activity-experience >div:nth-child(2) #first>div:nth-child(2)>div:nth-child(2){
+				margin-top: 8px;
+				display: flex;
+				flex-direction: row;
+				flex-shrink: 1;
+				flex-basis: 1;
+			}
+			#character-false{
+				font-family: icomoon;
+				display: inline-block;
+				margin-top: 3px;
+			}
+			 #first .descript>div:nth-child(2){
+				display: inline-block;
+				margin-left: 5px;
+			}
+			#second .descript>div:nth-child(2){
+				display: inline-block;
+				margin-left: 5px;
+			}
+			#second>div:nth-child(1){
+				float: left;
+				display: inline-block;
+				margin: 0px 0 0 50px;
+			}
+			#activity-experience >div:nth-child(2) #second>div:nth-child(2){
+				width: 70%;
+				margin-left: 20%;
+				text-align: left;
+				/* margin-top: -15px; */
+			}
+			#activity-experience >div:nth-child(2) #second>div:nth-child(2)>p:nth-child(1){
+				display: inline-block;
+				margin-top: -30px;
+			}
+			#activity-experience >div:nth-child(2) #second>div:nth-child(2)>div:nth-child(2){
+				margin-top: 8px;
+				display: flex;
+				flex-direction: row;
+				flex-shrink: 1;
+				flex-basis: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<header >
+			<div id="left-head">
+				<ul>
+					<li>
+						<span>联系电话:</span>
+						<span>123213</span>
+					</li>
+					<li>
+						<span>E-mail:</span>
+						<span>shunhu_gong@163.com</span>
+					</li>
+					<li>
+						<span>QQ:</span>
+						<span>1231212</span>
+					</li>
+				</ul>
+			</div>
+			<div id="right-head">
+				<img src="./img/1.jpg" >
+			</div>
+		</header>
+		<div id="header-line"></div>
+		<div id="self-description">
+			<ul>
+				<li><span>姓名:</span><span>贡顺虎</span></li>
+				<li><span>性别:</span><span>男</span></li>
+				<li><span>出生年月:</span><span>1998.02</span></li>
+				<li><span>籍贯:</span><span>江苏南京</span></li>
+				<li><span>求值意向:</span><span>java开发</span></li>
+			</ul>
+		</div>
+		<div id="cultrural-bac">
+			<div><h2>教育背景</h2><div></div></div>
+			<div>
+				<div>2016.9-2020.7</div>
+				<div><p>南京邮电大学 自动化专业</p><p>GPA: 3.0/4.5</p></div>
+			</div>
+			
+		</div>
+		<div id="activity-experience">
+			<div><h2>活动经历</h2><div></div></div>
+			<div>
+				<div id="first">
+					<div>2019.8</div>
+					<div>
+						<p>江苏省领航杯大学生信息技术与应用能力竞赛</p>
+						<div class="descript"><div id="character-false"></div>
+						<div>负责迈克尔逊干涉测量介质折射率系数的
+						设计以及电学部分公式的推导，荣获江苏省二等奖xxxxxx</div></div>
+					</div>
+				</div>
+				<div id="second">
+					<div>2019.8</div>
+					<div>
+						<p>江苏省领航杯大学生信息技术与应用能力竞赛</p>
+						<div class="descript"><div id="character-false"></div>
+						<div>负责迈克尔逊干涉测量介质折射率系数的
+						设计以及电学部分公式的推导，荣获江苏省二等奖xxxxxx</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="skills">
+			
+		</div>
+		<div id="certificate">
+			
+		</div>
+		<div id="self-judge">
+			
+		</div>
+	</body>
+</html>
